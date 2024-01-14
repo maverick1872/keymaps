@@ -1,0 +1,10 @@
+on: [push]
+
+jobs:
+  build:
+    name: Build Corne Firmware
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    with:
+      build_matrix_path: corne/build.yaml
+      config_path: corne
+      archive_name: corne-firmware
