@@ -1,0 +1,68 @@
+/*
+ * Homerow Mods Behaviors
+ *
+ * Usage: &<behavior code> <hold code>, <tap code>
+ * Tap: <tap code>
+ * Tap-Tap-Hold: Repeat <tap code>
+ * Hold: <hold code>
+ *
+ * Examples:
+ * &hrm_l lmeta, f         (hold: left meta, tap: f)
+ * &hrm_r rmeta, j         (hold: right meta, tap: j)
+ * &hrm_l_shft lshft, a    (hold: left shift, tap: a)
+ * 
+ * https://github.com/urob/zmk-config#timeless-homerow-mods
+ */
+
+// Positional Homerow mods for left hand
+ZMK_BEHAVIOR(hrm_l, hold_tap,
+    flavor = "balanced";                            // produces a hold if another key is both pressed and released within the tapping-term
+		tapping-term-ms = <HM_TAPPING_TERM>;            // tapping-term is the time within which a tap must occur to be considered a tap
+    quick-tap-ms = <HM_QUICK_TAP_TERM>;             // quick tap is the time within which a tap must occur to be considered a tap-into-hold
+		require-prior-idle-ms = <HM_PRIOR_IDLE>;        // require-prior-idle is the time within which a tap must occur to be immediately considered a tap
+    bindings = <&kp>, <&kp>;
+    hold-trigger-key-positions = <KEYS_R THUMBS>;   // define the key positions that trigger the hold
+    hold-trigger-on-release;                        // delay positional check until key-release
+)
+
+// Positional Homerow mods for right hand
+ZMK_BEHAVIOR(hrm_r, hold_tap,
+    flavor = "balanced";
+		tapping-term-ms = <HM_TAPPING_TERM>;
+    quick-tap-ms = <HM_QUICK_TAP_TERM>;
+		require-prior-idle-ms = <HM_PRIOR_IDLE>;
+    bindings = <&kp>, <&kp>;
+    hold-trigger-key-positions = <KEYS_L THUMBS>;
+    hold-trigger-on-release;
+)
+
+// Positional Homerow shift mod for left hand
+ZMK_BEHAVIOR(hrm_l_shft, hold_tap,
+    flavor = "balanced";
+		tapping-term-ms = <HM_TAPPING_TERM>;
+    quick-tap-ms = <HM_QUICK_TAP_TERM>;
+		require-prior-idle-ms = <HM_PRIOR_IDLE>;
+    bindings = <&kp>, <&kp>;
+    hold-trigger-key-positions = <KEYS_R THUMBS>;
+    hold-trigger-on-release;
+)
+
+// Positional Homerow shift mod for right hand
+ZMK_BEHAVIOR(hrm_r_shft, hold_tap,
+    flavor = "balanced";
+		tapping-term-ms = <HM_TAPPING_TERM>;
+    quick-tap-ms = <HM_QUICK_TAP_TERM>;
+		require-prior-idle-ms = <HM_PRIOR_IDLE>;
+    bindings = <&kp>, <&kp>;
+    hold-trigger-key-positions = <KEYS_L THUMBS>;
+    hold-trigger-on-release;
+)
+
+// Non-Positional Homerow mods
+ZMK_BEHAVIOR(hrm, hold_tap,
+    flavor = "balanced";
+		tapping-term-ms = <HM_TAPPING_TERM>;
+    quick-tap-ms = <HM_QUICK_TAP_TERM>;
+		require-prior-idle-ms = <HM_PRIOR_IDLE>;
+    bindings = <&kp>, <&kp>;
+)
