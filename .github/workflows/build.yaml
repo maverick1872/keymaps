@@ -1,14 +1,10 @@
 on: [push]
-# on: [push, pull_request, workflow_dispatch]
-#
-# jobs:
-#   build:
-#     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+
 jobs:
   build:
     name: Build Corne Firmware
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    uses: urob/zmk/.github/workflows/build-user-config.yml@build-with-submodules
     with:
-      archive_name: corne-firmware
+      archive_name: zmk-firmwares
     #   build_matrix_path: corne/build.yaml
     #   config_path: corne
