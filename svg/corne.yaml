@@ -40,8 +40,8 @@ layers:
   - TAB
   - {t: SPACE, h: num}
   - media
-  - {t: BSPC, h: nav}
-  - {t: ENTER, h: sym}
+  - {t: BSPC, h: sym}
+  - {t: ENTER, h: nav}
   - LSHFT
   nav:
   - ''
@@ -83,8 +83,8 @@ layers:
   - ''
   - ''
   - ''
-  - {t: SLEEP, type: held}
-  - ''
+  - SLEEP
+  - {type: held}
   - ''
   num:
   - ''
@@ -169,8 +169,8 @@ layers:
   - ''
   - ''
   - ''
-  - ''
   - {type: held}
+  - ''
   - ''
   media:
   - ''
@@ -215,3 +215,7 @@ layers:
   - ''
   - ''
   - ''
+combos:
+- p: [16, 19]
+  k: CAPS
+  l: [base]
