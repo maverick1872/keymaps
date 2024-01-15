@@ -33,7 +33,7 @@ ZMK_LAYER(num,
 ZMK_LAYER(sym,
     &none  &none  &kp MINUS  &kp LEFT_BRACE        &kp RIGHT_BRACE        &none    &none  &none  &none  &none  &none  &none
     &none  &none  &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none    &none  &none  &none  &none  &none  &none
-    &none  &none  &kp PLUS   &kp EQUAL             &kp RBKT               &none    &none  &none  &none  &none  &none  &none
+    &none  &none  &kp PLUS   &kp LBKT             &kp RBKT               &none    &none  &none  &none  &none  &none  &none
                              &none                 &none                  &none    &none  &none  &none
 )
 
