@@ -19,7 +19,7 @@ ZMK_LAYER(base,
     &kp ESC    &kp Q                &kp W          &kp E           &kp R           &kp T       &kp Y     &kp U           &kp I           &kp O          &kp P                   &kp BSLH
     &kp TAB    &hrm_l_shft LSHFT A  &hmr_l LALT S  &hmr_l LCTRL D  &hmr_l LGUI F   &kp G       &kp H     &hrm_r RGUI J   &hrm_r RCTRL K  &hrm_r RALT L  &hrm_r_shft RSHFT SEMI  &kp SQT
     &kp LSHFT  &kp Z                &kp X          &kp C           &kp V           &kp B       &kp N     &kp M           &kp COMMA       &kp DOT        &kp FSL                 &kp RSHFT
-                                                   &mo NUM         &lt MEDIA SPACE &kp TAB     &kp BSPC  &lt SYM ENTER   &mo NAV
+                                                   &mo 2           &lt 4 SPACE     &kp TAB     &kp BSPC  &lt 3 ENTER     &mo 1
 )
 
 ZMK_LAYER(nav,
