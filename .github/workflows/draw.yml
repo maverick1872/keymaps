@@ -2,7 +2,7 @@
 name: Draw keymap
 
 on:
-  workflow_dispatch: # can be triggered manually
+  workflow_dispatch:
   push:
     paths:
       - "config/*.keymap"
