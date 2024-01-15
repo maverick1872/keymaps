@@ -5,6 +5,6 @@ jobs:
     name: Build Corne Firmware
     uses: urob/zmk/.github/workflows/build-user-config.yml@build-with-submodules
     with:
-      archive_name: zmk-firmwares
+      archive_name: "zmk-firmwares-${{ github.sha }}"
     #   build_matrix_path: corne/build.yaml
     #   config_path: corne
