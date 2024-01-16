@@ -50,10 +50,10 @@ layers:
   - ''
   - ''
   - ''
-  - PAGE UP
+  - PG UP
   - HOME
   - END
-  - PAGE DOWN
+  - PG DN
   - ''
   - ''
   - ''
@@ -102,7 +102,7 @@ layers:
   - ''
   - LSHFT
   - LALT
-  - LEFT CONTROL
+  - LCTRL
   - LGUI
   - ''
   - .
@@ -187,7 +187,7 @@ layers:
   - ''
   - ''
   - ''
-  - PREVIOUS
+  - PREV
   - PLAY PAUSE
   - NEXT
   - {t: BT, h: '0'}
