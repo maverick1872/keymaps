@@ -12,14 +12,14 @@
 ZMK_COMBO(caps, &kp CAPS, LM1 RM1, 0, 40)
 
 ZMK_LAYER(base, 
-    &kp ESC    &kp Q        &kp W       &kp E        &kp R             &kp T       &kp Y       &kp U        &kp I        &kp O       &kp P           &kp BSLH
-    &kp TAB    &hrm_l_shft LSHFT A  &hrm_l LALT S  &hrm_l LCTRL D  &hrm_l LGUI F     &kp G       &kp H     &hrm_r RGUI J   &hrm_r RCTRL K  &hrm_r RALT L  &hrm_r_shft RSHFT SEMI  &kp SQT
-    &kp LSHFT  &kp Z        &kp X       &kp C        &kp V             &kp B       &kp N       &kp M        &kp COMMA    &kp DOT     &kp FSLH        &kp RSHFT
-                                        &kp TAB      &lt 2 SPACE       &mo 4       &lt 3 BSPC  &lt 1 ENTER  &kp LSHFT
+    &kp ESC    &kp Q                &kp W          &kp E           &kp R          &kp T       &kp Y       &kp U          &kp I           &kp O          &kp P                   &kp BSLH
+    &kp TAB    &hrm_l_shft LSHFT A  &hrm_l LALT S  &hrm_l LCTRL D  &hrm_l LGUI F  &kp G       &kp H       &hrm_r RGUI J  &hrm_r RCTRL K  &hrm_r RALT L  &hrm_r_shft RSHFT SEMI  &kp SQT
+    &kp LSHFT  &kp Z                &kp X          &kp C           &kp V          &kp B       &kp N       &kp M          &kp COMMA       &kp DOT        &kp FSLH                &kp RSHFT
+                                                   &kp TAB         &lt 2 SPACE    &mo 4       &lt 3 BSPC  &lt 1 ENTER    &kp LSHFT
 )
 
 ZMK_LAYER(nav,
-    &none  &none      &none      &none       &none        &none     &kp PAGE_UP  &kp HOME   &kp END  &kp PAGE_UPD  &none  &none
+    &none  &none      &none      &none       &none        &none     &kp PAGE_UP  &kp HOME   &kp END  &kp PAGE_DOWN  &none  &none
     &none  &kp LSHFT  &kp LALT   &kp LCTRL   &kp LGUI     &none     &kp LEFT     &kp DOWN   &kp UP   &kp RIGHT     &none  &none
     &none  &none      &kp K_CUT  &kp K_COPY  &kp K_PASTE  &none     &none        &none      &none    &none         &none  &none
                                  &none       &none        &none     &kp C_SLEEP  &none      &none
