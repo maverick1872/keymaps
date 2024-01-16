@@ -178,7 +178,7 @@ layers:
   - ''
   - VOLUME UP
   - PSCRN
-  - BT PRV
+  - BT CLR
   - ''
   - ''
   - ''
@@ -190,7 +190,7 @@ layers:
   - PREVIOUS
   - PLAY PAUSE
   - NEXT
-  - BT NXT
+  - {t: BT, h: '0'}
   - ''
   - ''
   - ''
@@ -202,7 +202,7 @@ layers:
   - ''
   - VOL DN
   - ''
-  - BT CLR
+  - {t: BT, h: '1'}
   - ''
   - ''
   - ''
