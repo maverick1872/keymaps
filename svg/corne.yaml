@@ -50,14 +50,14 @@ layers:
   - ''
   - ''
   - ''
-  - HOME
   - PAGE UP
-  - PAGE DOWN
+  - HOME
   - END
+  - PAGE UPD
   - ''
   - ''
   - ''
-  - LEFT SHIFT
+  - LSHFT
   - LALT
   - LCTRL
   - LGUI

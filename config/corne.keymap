@@ -19,10 +19,10 @@ ZMK_LAYER(base,
 )
 
 ZMK_LAYER(nav,
-    &none  &none           &none      &none       &none        &none    &kp HOME     &kp PAGE_UP  &kp PAGE_DOWN  &kp END    &none  &none
-    &none  &kp LEFT_SHIFT  &kp LALT   &kp LCTRL   &kp LGUI     &none    &kp LEFT     &kp DOWN     &kp UP         &kp RIGHT  &none  &none
-    &none  &none           &kp K_CUT  &kp K_COPY  &kp K_PASTE  &none    &none        &none        &none          &none      &none  &none
-                                      &none       &none        &none    &kp C_SLEEP  &none        &none
+    &none  &none      &none      &none       &none        &none     &kp PAGE_UP  &kp HOME   &kp END  &kp PAGE_UPD  &none  &none
+    &none  &kp LSHFT  &kp LALT   &kp LCTRL   &kp LGUI     &none     &kp LEFT     &kp DOWN   &kp UP   &kp RIGHT     &none  &none
+    &none  &none      &kp K_CUT  &kp K_COPY  &kp K_PASTE  &none     &none        &none      &none    &none         &none  &none
+                                 &none       &none        &none     &kp C_SLEEP  &none      &none
 )
 
 ZMK_LAYER(num,
