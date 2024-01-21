@@ -215,7 +215,53 @@ layers:
   - ''
   - ''
   - ''
+  game:
+  - ESC
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - \
+  - TAB
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - LSHFT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - RSHFT
+  - LALT
+  - {t: SPACE, h: num}
+  - LCTRL
+  - {t: BSPC, h: sym}
+  - {t: ENTER, h: nav}
+  - LSHFT
 combos:
 - p: [16, 19]
   k: CAPS
   l: [base]
+- p: [0, 11]
+  k: {t: game, h: toggle}
+  l: [base, game]
