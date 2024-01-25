@@ -37,12 +37,12 @@ layers:
   - .
   - /
   - RSHFT
-  - TAB
-  - {t: SPACE, h: num}
   - media
-  - {t: BSPC, h: sym}
-  - {t: ENTER, h: nav}
-  - LSHFT
+  - {t: SPACE, h: num}
+  - {t: TAB, h: LSHFT}
+  - {t: ENTER, h: sym}
+  - {t: BSPC, h: nav}
+  - ''
   nav:
   - ''
   - ''
@@ -209,9 +209,9 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
   - {type: held}
+  - ''
+  - ''
   - ''
   - ''
   - ''
