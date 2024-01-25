@@ -9,6 +9,13 @@
 #include "includes/settings.dtsi"           // includes personal settings
 #include "includes/homerow-mods.dtsi"       // includes homerow mods
 
+// Layer defintions
+#define BASE 0
+#define NAV 1
+#define NUM 2
+#define SYM 3
+#define MEDIA 4
+
 ZMK_COMBO(caps, &kp CAPS, LM1 RM1, 0, 40)
 ZMK_COMBO(gameLyr, &tog 5, LT5 RT5, 0 5, 40)
 
@@ -16,7 +23,7 @@ ZMK_LAYER(base,
     &kp ESC    &kp Q                &kp W          &kp E           &kp R          &kp T       &kp Y       &kp U          &kp I           &kp O          &kp P                   &kp BSLH
     &kp TAB    &hrm_l_shft LSHFT A  &hrm_l LALT S  &hrm_l LCTRL D  &hrm_l LGUI F  &kp G       &kp H       &hrm_r RGUI J  &hrm_r RCTRL K  &hrm_r RALT L  &hrm_r_shft RSHFT SEMI  &kp SQT
     &kp LSHFT  &kp Z                &kp X          &kp C           &kp V          &kp B       &kp N       &kp M          &kp COMMA       &kp DOT        &kp FSLH                &kp RSHFT
-                                                   &kp TAB         &lt 2 SPACE    &mo 4       &lt 3 BSPC  &lt 1 ENTER    &kp LSHFT
+                                                   &kp TAB         &lt 2 SPACE    &mo MEDIA       &lt 3 BSPC  &lt 1 ENTER    &kp LSHFT
 )
 
 ZMK_LAYER(nav,
@@ -34,10 +41,10 @@ ZMK_LAYER(num,
 )
 
 ZMK_LAYER(sym,
-    &none  &none  &kp MINUS  &kp LBRC  &kp RBRC  &none    &none  &none  &none  &none  &none  &none
-    &none  &none  &kp EQUAL  &kp LPAR  &kp RPAR  &none    &none  &none  &none  &none  &none  &none
-    &none  &none  &kp PLUS   &kp LBKT  &kp RBKT  &none    &none  &none  &none  &none  &none  &none
-                             &none     &none     &none    &none  &none  &none
+    &none  &none  &kp MINUS  &kp LBRC  &kp RBRC  &none    &none     &none       &none       &none       &none  &none
+    &none  &none  &kp EQUAL  &kp LPAR  &kp RPAR  &none    &kp RGUI  &kp RCTRL   &kp RALT    &kp RSHFT   &none  &none
+    &none  &none  &kp PLUS   &kp LBKT  &kp RBKT  &none    &none     &none       &none       &none       &none  &none
+                             &none     &none     &none    &none     &none       &none
 )
 
 ZMK_LAYER(media,
