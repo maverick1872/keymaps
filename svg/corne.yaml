@@ -126,9 +126,9 @@ layers:
   - ''
   - {type: held}
   - ''
-  - ''
+  - sym
+  - {t: ▽, type: trans}
   - '0'
-  - ''
   sym:
   - ''
   - ''
