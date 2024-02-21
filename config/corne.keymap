@@ -16,7 +16,7 @@
 #define SYM 3
 #define MEDIA 4
 
-ZMK_COMBO(caps, &kp CAPS, LM1 RM1, 0, 40)
+ZMK_COMBO(caps, <&caps_word>, LM1 RM1, 0, 40)
 ZMK_COMBO(gameLyr, &tog 5, LT5 RT5, 0 5, 40)
 
 ZMK_LAYER(base, 
