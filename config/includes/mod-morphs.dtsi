@@ -15,4 +15,4 @@
 
 // tap: /
 // shift tap: |
-AMBI_MORPH(slsh_morph, &kp FSLSH, &kp PIPE)
+AMBI_MORPH(slsh_morph, SFT, &kp FSLSH, &kp PIPE)
