@@ -3,16 +3,13 @@
  *
  * These behaviors are used to create a key that can be used to type different
  * characters depending on the modifiers that are held down. 
- *
- * Additionally a custom behavior is defined for amibidextrous modifier usage.
  */
 
-#define AMBI_MORPH(NAME, MOD, BINDING1, BINDING2) \
+#define SHFT_MORPH(NAME, BINDING1, BINDING2) \
     ZMK_BEHAVIOR(NAME, mod_morph, \
-        mods = <(MOD_L ## MOD|MOD_R ## MOD)>; \
+        mods = <(MOD_LSFT|MOD_RSFT)>; \
         bindings = <BINDING1>, <BINDING2>; \
     )
-
 // tap: /
 // shift tap: |
-AMBI_MORPH(slsh_morph, SFT, &kp FSLSH, &kp PIPE)
+SHFT_MORPH(slsh_morph, &kp FSLH, &kp PIPE)
