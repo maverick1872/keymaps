@@ -23,8 +23,8 @@ layers:
   - {t: J, h: RGUI}
   - {t: K, h: RCTRL}
   - {t: L, h: RALT}
-  - {t: ;, h: RSHFT}
-  - ''''
+  - {t: '''', h: RSHFT}
+  - ;
   - LSHFT
   - Z
   - X
@@ -105,7 +105,7 @@ layers:
   - LCTRL
   - LGUI
   - ''
-  - .
+  - +
   - '4'
   - '5'
   - '6'
@@ -121,14 +121,14 @@ layers:
   - '1'
   - '2'
   - '3'
-  - ''
+  - '&slsh_morph'
   - ''
   - ''
   - {type: held}
   - ''
-  - sym
-  - {t: ▽, type: trans}
+  - {t: ., h: '3'}
   - '0'
+  - ''
   sym:
   - ''
   - ''
@@ -260,7 +260,7 @@ layers:
   - LSHFT
 combos:
 - p: [16, 19]
-  k: CAPS
+  k: '&caps_word'
   l: [base]
 - p: [0, 11]
   k: {t: game, h: toggle}

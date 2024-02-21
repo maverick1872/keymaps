@@ -1,0 +1,18 @@
+/*
+ * Mod Morph Behaviors
+ *
+ * These behaviors are used to create a key that can be used to type different
+ * characters depending on the modifiers that are held down. 
+ *
+ * Additionally a custom behavior is defined for amibidextrous modifier usage.
+ */
+
+#define AMBI_MORPH(NAME, MOD, BINDING1, BINDING2) \
+    ZMK_BEHAVIOR(NAME, mod_morph, \
+        mods = <(MOD_L ## MOD|MOD_R ## MOD)>; \
+        bindings = <BINDING1>, <BINDING2>; \
+    )
+
+// tap: /
+// shift tap: |
+AMBI_MORPH(slsh_morph, &kp FSLSH, &kp PIPE)
