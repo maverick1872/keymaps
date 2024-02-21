@@ -13,3 +13,5 @@
 // tap: /
 // shift tap: |
 SHFT_MORPH(slsh_morph, &kp FSLH, &kp PIPE)
+
+SHFT_MORPH(plus_morph, &kp PLUS, &kp EQUAL)
