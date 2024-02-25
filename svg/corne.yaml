@@ -1,6 +1,6 @@
 layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
 layers:
-  base:
+  '0':
   - ESC
   - Q
   - W
@@ -37,13 +37,13 @@ layers:
   - .
   - /
   - RSHFT
-  - media
-  - {t: SPACE, h: num}
+  - '4'
+  - {t: SPACE, h: '2'}
   - {t: TAB, h: LSHFT}
-  - {t: ENTER, h: sym}
-  - {t: BSPC, h: nav}
+  - {t: ENTER, h: '3'}
+  - {t: BSPC, h: '1'}
   - ''
-  nav:
+  '1':
   - ''
   - ''
   - ''
@@ -86,7 +86,7 @@ layers:
   - SLEEP
   - {type: held}
   - ''
-  num:
+  '2':
   - ''
   - ''
   - ''
@@ -129,7 +129,7 @@ layers:
   - {t: ., h: '3'}
   - '0'
   - ''
-  sym:
+  '3':
   - ''
   - ''
   - '-'
@@ -172,7 +172,7 @@ layers:
   - {type: held}
   - ''
   - ''
-  media:
+  '4':
   - ''
   - ''
   - ''
@@ -215,7 +215,7 @@ layers:
   - ''
   - ''
   - ''
-  game:
+  '5':
   - ESC
   - Q
   - W
@@ -253,15 +253,18 @@ layers:
   - /
   - RSHFT
   - LALT
-  - {t: SPACE, h: num}
+  - {t: SPACE, h: '2'}
   - LCTRL
-  - {t: BSPC, h: sym}
-  - {t: ENTER, h: nav}
+  - {t: ENTER, h: '3'}
+  - {t: BSPC, h: '1'}
   - LSHFT
 combos:
+- p: [19, 20]
+  k: BKSPC
+  l: ['0', '2']
 - p: [16, 19]
   k: '&caps_word'
-  l: [base]
+  l: ['0']
 - p: [0, 11]
-  k: {t: game, h: toggle}
-  l: [base, game]
+  k: {t: '5', h: toggle}
+  l: ['0', '5']
