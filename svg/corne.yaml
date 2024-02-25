@@ -259,6 +259,9 @@ layers:
   - {t: BSPC, h: '1'}
   - LSHFT
 combos:
+- p: [16, 15]
+  k: DEL
+  l: ['0', '2']
 - p: [19, 20]
   k: BSPC
   l: ['0', '2']
