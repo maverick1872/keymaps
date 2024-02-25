@@ -18,6 +18,7 @@
 #define MEDIA 4
 #define GAME 5
 
+ZMK_COMBO(del, &kp DEL, LM1 LM2, BASE NUM, 40)
 ZMK_COMBO(bkspc, &kp BSPC, RM1 RM2, BASE NUM, 40)
 ZMK_COMBO(caps, &caps_word_morph, LM1 RM1, BASE, 50)
 ZMK_COMBO(gameLyr, &tog 5, LT5 RT5, BASE GAME, 40)
