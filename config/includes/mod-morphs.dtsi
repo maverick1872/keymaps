@@ -14,4 +14,10 @@
 // shift tap: |
 SHFT_MORPH(slsh_morph, &kp FSLH, &kp PIPE)
 
+// tap: +
+// shift tap: =
 SHFT_MORPH(plus_morph, &kp PLUS, &kp EQUAL)
+
+// tap: CAPS word
+// shift tap: CAPS LOCK
+SHFT_MORPH(caps_word_morph, &caps_word, &kp CAPS)
