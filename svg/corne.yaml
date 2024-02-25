@@ -260,10 +260,10 @@ layers:
   - LSHFT
 combos:
 - p: [19, 20]
-  k: BKSPC
+  k: BSPC
   l: ['0', '2']
 - p: [16, 19]
-  k: '&caps_word'
+  k: {t: '&caps_word', s: CAPS}
   l: ['0']
 - p: [0, 11]
   k: {t: '5', h: toggle}
