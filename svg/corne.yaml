@@ -23,8 +23,8 @@ layers:
   - {t: J, h: RGUI}
   - {t: K, h: RCTRL}
   - {t: L, h: RALT}
-  - {t: '''', h: RSHFT}
-  - ;
+  - {t: ;, h: RSHFT}
+  - ''''
   - LSHFT
   - Z
   - X
@@ -238,8 +238,8 @@ layers:
   - J
   - K
   - L
-  - ;
   - ''''
+  - ;
   - LSHFT
   - Z
   - X
