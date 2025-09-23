@@ -4,7 +4,7 @@
 #include <dt-bindings/zmk/keys.h>           // includes the keycodes
 #include <dt-bindings/zmk/bt.h>             // includes the bluetooth codes
 
-#include "../zmk-nodefree-config/helper.h"  // includes zmk-nodefree-config helpers (ZMK_BEHAVIOR)
+#include "zmk-helpers/helper.h"             // includes zmk-nodefree-config helpers (ZMK_BEHAVIOR)
 
 #include "includes/settings.dtsi"           // includes personal settings
 #include "includes/homerow-mods.dtsi"       // includes homerow mods
