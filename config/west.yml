@@ -1,20 +1,23 @@
 manifest:
+
   remotes:
-    - name: zmkfirmware # Official ZMK
+    - name: official # Official ZMK
       url-base: https://github.com/zmkfirmware
     - name: personal # Personal patched variant of ZMK
       url-base: https://github.com/maverick1872
     - name: urob # Patched variant of ZMK
       url-base: https://github.com/urob
+
   projects:
     - name: zmk
-      remote: urob
+      remote: official
       revision: main
       import: app/west.yml
     - name: zmk-helpers
       remote: urob
       revision: main
       path: modules/zmk-helpers
+
   self:
     path: config
 
