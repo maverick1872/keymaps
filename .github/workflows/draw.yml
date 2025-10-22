@@ -5,6 +5,7 @@ on:
   workflow_dispatch:
   push:
     paths:
+      - ".github/workflows/draw.yml"
       - "config/*.keymap"
       - "config/*.dtsi"
       - "keymap_drawer.config.yaml"
@@ -12,17 +13,19 @@ on:
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  group: "keymap"
+  cancel-in-progress: true
 
 jobs:
   draw:
-    uses: minusfive/keymap-drawer/.github/workflows/draw-zmk.yml@main
+    name: Generate & Commit keymap
+    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
     permissions:
       contents: write
     with:
-      install_branch: "main" # branch to install keymap-drawer from
       keymap_patterns: "config/*.keymap" # path to the keymaps to parse
-      config_path: "keymap_drawer.config.yaml" # config file, ignored if not exists
+      west_config_path: './config/'
       output_folder: "svg" # path to save produced SVGs
-      amend_commit: true # whether to amend the commit or create a new one
+      commit_message: "chore(draw): regenerate keymap"
+      fail_on_error: true
+      debug_mode: false

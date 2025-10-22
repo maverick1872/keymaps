@@ -1,0 +1,8 @@
+parse_config:
+  zmk_additional_includes:
+    - "modules/zmk-helpers/include"
+
+draw_config:
+  append_colon_to_layer_header: false
+  dark_mode: auto
+  footer_text: "maverick1872/keymaps"
