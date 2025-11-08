@@ -253,7 +253,7 @@ layers:
   - /
   - RSHFT
   - {t: LALT, h: '6'}
-  - {t: SPACE, h: '2'}
+  - SPACE
   - LCTRL
   - {t: ENTER, h: '3'}
   - {t: BSPC, h: '1'}
